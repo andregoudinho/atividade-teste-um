@@ -10,6 +10,14 @@ $conn = new mysqli($host, $user, $pass, $db);
 
 if ($conn->connect_error) {
     die("Erro na conexão!");
+}else{
+    // echo "<p> (Banco Ok!) </p>";
+    echo "<script> console.log('Banco: Ok!') </script>";
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usuario = $_POST["usuario"];
+    $senha = $_POST["senha"];
 }
 
 ?>
