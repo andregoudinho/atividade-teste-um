@@ -15,11 +15,13 @@
     </tr>
 
     <?php
-    // Aqui estamos consultando o banco de dados para obter os usuários cadastrados
+        // Consulta SQL para buscar todos os usuários cadastrados no banco de dados
         $sqlUsuarios = "SELECT * FROM usuario";
 
+        // Executa a consulta no banco de dados e armazena o resultado em uma variável
         $resultadoUsuarios = $conn->query($sqlUsuarios);
 
+        // Percorre os resultados da consulta e exibe cada usuário na tabela
         while($linha = $resultadoUsuarios->fetch_assoc()){
             echo "
             
