@@ -1,4 +1,7 @@
 <?php
+    // essa parte é a conexão com o banco de dados
+
+   // primeiro, definimos as variáveis de conexão, como host, usuário, senha e nome do banco de dados
 
     $host = "localhost";
     $user = "root";
